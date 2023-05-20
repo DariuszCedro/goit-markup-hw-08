@@ -1,0 +1,44 @@
+ul,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+ul.grid-primary {
+  margin-bottom: 94px;
+}
+
+header {
+  border-bottom: 1px solid $header-border-color;
+}
+
+figure {
+  margin: 0;
+  padding: 0;
+  background-color: var(--background-color-primary);
+}
+.container {
+  width: 1200px;
+  margin: 0 auto;
+
+  & .logo--header {
+    margin-right: 93px;
+    padding: 25px 0 24px;
+  }
+  &--display {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+  &--filters {
+    @extend .container;
+    margin-bottom: 50px;
+  }
+}

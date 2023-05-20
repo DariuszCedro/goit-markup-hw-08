@@ -1,0 +1,29 @@
+.contact-link {
+  display: flex;
+  font-size: 14px;
+  line-height: 1.17214;
+  color: $text-color-secondary;
+  text-decoration: none;
+  transition-property: color, background-color, box-shadow, fill, border-color;
+  transition-duration: $transition-duration;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  &__icon {
+    fill: #757575;
+    margin-right: 10px;
+    align-self: center;
+    transition-property: color, background-color, box-shadow, fill, border-color;
+    transition-duration: $transition-duration;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  &:hover,
+  &:focus {
+    color: $hover-effect;
+  }
+
+  &:hover &__icon,
+  &:focus &__icon {
+    fill: $hover-effect;
+  }
+}

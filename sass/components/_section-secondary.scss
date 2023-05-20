@@ -1,0 +1,23 @@
+.section-secondary {
+  color: $background-color-primary;
+  background-color: $background-color-secondary;
+
+  & h1 {
+    font-size: 44px;
+    font-weight: 900;
+    line-height: 1.363636;
+    margin: 0 0 30px;
+    text-align: center;
+  }
+  & .container {
+    padding: 200px 0;
+  }
+  &--background {
+    background-image: linear-gradient(to right, #2f303a66 50%, #2f303a66 100%),
+      url(../images/people-working.jpg);
+
+    background-size: contain;
+    max-width: 1600px;
+    margin: auto;
+  }
+}

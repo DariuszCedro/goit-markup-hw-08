@@ -1,0 +1,13 @@
+.section-team {
+  background-color: $background-color-third;
+  color: $text-color-primary;
+  line-height: 1.171875;
+
+  & h4 {
+    font-weight: 500;
+  }
+
+  & p {
+    color: $text-color-secondary;
+  }
+}
