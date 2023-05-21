@@ -1,8 +1,10 @@
 .grid-team {
-  display: flex;
+  display: block;
   justify-content: center;
   column-gap: 30px;
   list-style-type: none;
+  padding-left: 15px;
+  padding-right: 15px;
 
   & figure {
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
@@ -12,7 +14,8 @@
 
   &__figcaption {
     text-align: center;
-    padding: 30px 0;
+    padding: 30px 0 24px 0;
+    margin-bottom: 30px;
   }
 
   &__figcaption h4 {
@@ -36,5 +39,49 @@
   &__icon:hover,
   .social-link:focus &__icon {
     fill: $background-color-primary;
+  }
+}
+
+@media (min-width: 768px) {
+  .grid-team {
+    display: flex;
+    justify-content: center;
+    column-gap: 30px;
+    list-style-type: none;
+
+    & figure {
+      box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
+        0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+      border-radius: 0px 0px 4px 4px;
+    }
+
+    &__figcaption {
+      text-align: center;
+      padding: 30px 0;
+    }
+
+    &__figcaption h4 {
+      margin-bottom: 10px;
+    }
+    &__icon-container {
+      display: flex;
+      column-gap: 10px;
+      margin-top: 16px;
+      justify-content: center;
+    }
+
+    &__icon {
+      display: flex;
+      fill: $social-icon-color;
+      padding: 12px;
+      transition-property: color, background-color, box-shadow, fill,
+        border-color;
+      transition-duration: $transition-duration;
+      transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    }
+    &__icon:hover,
+    .social-link:focus &__icon {
+      fill: $background-color-primary;
+    }
   }
 }

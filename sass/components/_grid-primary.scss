@@ -1,24 +1,55 @@
 .grid-primary {
+  display: block;
   font-size: 14px;
   font-weight: 400;
   line-height: 1.71429;
   list-style-type: none;
-  display: flex;
-  column-gap: 30px;
+  padding-left: 10px;
 
   & h5 {
     font-size: 14px;
     line-height: 1.17214;
     margin-bottom: 10px;
+    text-align: center;
   }
   &__icon {
     display: flex;
     background-color: $background-color-third;
     margin-bottom: 30px;
-    padding: 25px 100px;
+    padding: 25px 190px;
   }
 
   & li {
-    max-width: 270px;
+    max-width: 450px;
+  }
+  & li > p {
+    margin-bottom: 30px;
+  }
+}
+
+@media (min-width: 768px) {
+  .grid-primary {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.71429;
+    list-style-type: none;
+    display: flex;
+    column-gap: 30px;
+
+    & h5 {
+      font-size: 14px;
+      line-height: 1.17214;
+      margin-bottom: 10px;
+    }
+    &__icon {
+      display: flex;
+      background-color: $background-color-third;
+      margin-bottom: 30px;
+      padding: 25px 100px;
+    }
+
+    & li {
+      max-width: 270px;
+    }
   }
 }

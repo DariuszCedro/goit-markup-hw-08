@@ -11,9 +11,14 @@ p {
 }
 
 ul.grid-primary {
-  margin-bottom: 94px;
+  margin-bottom: 60px;
 }
 
+@media (min-width: 768px) {
+  ul.grid-primary {
+    margin-bottom: 94px;
+  }
+}
 header {
   border-bottom: 1px solid $header-border-color;
 }
@@ -23,13 +28,14 @@ figure {
   padding: 0;
   background-color: var(--background-color-primary);
 }
+
 .container {
-  width: 1200px;
+  min-width: 320px;
+  max-width: 480px;
   margin: 0 auto;
 
   & .logo--header {
-    margin-right: 93px;
-    padding: 25px 0 24px;
+    padding: 16px 0 16px 15px;
   }
   &--display {
     display: flex;
@@ -40,5 +46,27 @@ figure {
   &--filters {
     @extend .container;
     margin-bottom: 50px;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+
+    & .logo--header {
+      margin-right: 93px;
+      padding: 25px 0 24px;
+    }
+    &--display {
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      align-items: center;
+    }
+    &--filters {
+      @extend .container;
+      margin-bottom: 50px;
+    }
   }
 }

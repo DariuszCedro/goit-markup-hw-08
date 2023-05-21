@@ -1,6 +1,14 @@
-.contact-container {
-  display: flex;
-  column-gap: 30px;
-  margin-left: 345px;
-  margin-right: 0;
+@media (max-width: 768px) {
+  .contact-container {
+    display: none;
+  }
+}
+
+@media (min-width: 768px) {
+  .contact-container {
+    display: flex;
+    column-gap: 30px;
+    margin-left: 345px;
+    margin-right: 0;
+  }
 }

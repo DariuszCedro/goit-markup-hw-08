@@ -1,7 +1,13 @@
 .section-team {
-  background-color: $background-color-third;
   color: $text-color-primary;
   line-height: 1.171875;
+
+  &__header {
+    font-size: 36px;
+    line-height: 1.171944;
+    text-align: center;
+    margin-bottom: 50px;
+  }
 
   & h4 {
     font-weight: 500;
@@ -9,5 +15,28 @@
 
   & p {
     color: $text-color-secondary;
+  }
+}
+
+@media (min-width: 768px) {
+  .section-team {
+    background-color: $background-color-third;
+    color: $text-color-primary;
+    line-height: 1.171875;
+
+    &__header {
+      font-size: 36px;
+      line-height: 1.171944;
+      text-align: center;
+      margin-bottom: 50px;
+    }
+
+    & h4 {
+      font-weight: 500;
+    }
+
+    & p {
+      color: $text-color-secondary;
+    }
   }
 }

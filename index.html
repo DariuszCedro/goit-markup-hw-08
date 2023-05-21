@@ -18,6 +18,7 @@
   <body>
     <header>
       <div class="container header">
+        
         <a class="logo logo--header" href="./index.html"
           ><span>Web</span>Studio</a
         >
@@ -72,6 +73,20 @@
             >
           </div>
         </div>
+        <button
+          class="menu-toggle js-open-menu"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+        >
+          <svg
+            width="24"
+            height="16"
+            
+            xmlns="http://www.w3.org/2000/svg"
+          >
+          <use href="./images/icons.svg#icon-menu"></use>
+          </svg>
+        </button>
       </div>
     </header>
     <main>
@@ -215,7 +230,7 @@
               </p>
             </li>
           </ul>
-          <h2 class="section__header">Czym się zajmujemy</h2>
+          <h2 class="section__header" id="first">Czym się zajmujemy</h2>
           <ul class="grid-secondary">
             <li class="grid-secondary__container">
               <img
@@ -253,12 +268,13 @@
           <ul class="grid-team">
             <li>
               <figure>
+                <picture>
+                  <source srcset="./images/designer.jpg" media="(min-width: 768px)" />
                 <img
-                  src="./images/designer.jpg"
+                  src="./images/designer-mobile.jpg"
                   alt="Jon Doe - Product Designer"
-                  width="270"
-                  height="260"
-                />
+                  
+                /></picture>
                 <figcaption class="grid-team__figcaption">
                   <h4>John Doe</h4>
                   <p>Product Designer</p>
@@ -305,12 +321,14 @@
             </li>
             <li>
               <figure>
+                <picture>
+                  <source srcset="./images/developer.jpg" media="(min-width: 768px)" />
+                
                 <img
-                  src="./images/developer.jpg"
+                  src="./images/developer-mobile.jpg"
                   alt="Jon Doe - Frontend Developer"
-                  width="270"
-                  height="260"
-                />
+                 
+                /></picture>
                 <figcaption class="grid-team__figcaption">
                   <h4>John Doe</h4>
                   <p>Frontend Developer</p>
@@ -357,12 +375,14 @@
             </li>
             <li>
               <figure>
+                <picture>
+                  <source srcset="./images/marketing.jpg" media="(min-width: 768px)" />
+                
                 <img
-                  src="./images/marketing.jpg"
+                  src="./images/marketing-mobile.jpg"
                   alt="Jon Doe - Marketing"
-                  width="270"
-                  height="260"
-                />
+                  
+                /></picture>
                 <figcaption class="grid-team__figcaption">
                   <h4>John Doe</h4>
                   <p>Marketing</p>
@@ -405,12 +425,13 @@
             </li>
             <li>
               <figure>
+                <picture>
+                  <source srcset="./images/ui_designer.jpg" media="(min-width: 768px)" />
                 <img
-                  src="./images/ui_designer.jpg"
+                  src="./images/ui_designer-mobile.jpg"
                   alt="Jon Doe - UI Designer"
-                  width="270"
-                  height="260"
-                />
+                 
+                /></picture>
                 <figcaption class="grid-team__figcaption">
                   <h4>John Doe</h4>
                   <p>UI Designer</p>
@@ -530,7 +551,7 @@
               class="contact-link"
               href="mailto:info@devstudio.com"
               >info@devstudio.com</a
-            ><br />
+            >
             <a
               class="contact-link"
               href="tel:info@devstudio.com"
@@ -588,5 +609,6 @@
       </div>
     </footer>
     <script src="./js/modal.js"></script>
+    <script defer src="js/mobile-menu.js"></script>
   </body>
 </html>
