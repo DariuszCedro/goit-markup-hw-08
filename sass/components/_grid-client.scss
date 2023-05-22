@@ -2,7 +2,7 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  column-gap: 30px;
+  gap: 30px;
 
   &__icon {
     fill: $social-icon-color;
@@ -22,7 +22,6 @@
     transition-duration: $transition-duration;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     flex-basis: calc(100% / 2);
-    margin-bottom: 30px;
   }
 
   &__link:hover,

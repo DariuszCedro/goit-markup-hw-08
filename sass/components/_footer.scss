@@ -45,6 +45,28 @@
   }
 }
 
+@media (min-width: 768px) {
+  .footer {
+    & .contact-link {
+      flex-wrap: wrap;
+    }
+    & .container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    &__socials {
+      margin-left: 144px;
+      padding-top: 12px;
+    }
+
+    &__socials h5 {
+      text-align: center;
+    }
+  }
+}
+
 @media (min-width: 1200px) {
   .footer {
     & .contact-link {

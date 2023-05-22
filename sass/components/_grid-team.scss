@@ -1,7 +1,8 @@
 .grid-team {
-  display: block;
+  display: flex;
   justify-content: center;
-  column-gap: 30px;
+  flex-wrap: wrap;
+  gap: 30px;
   list-style-type: none;
   padding-left: 15px;
   padding-right: 15px;
@@ -15,7 +16,6 @@
   &__figcaption {
     text-align: center;
     padding: 30px 0 24px 0;
-    margin-bottom: 30px;
   }
 
   &__figcaption h4 {
@@ -39,6 +39,17 @@
   &__icon:hover,
   .social-link:focus &__icon {
     fill: $background-color-primary;
+  }
+}
+
+@media (min-width: 768px) {
+  .grid-team {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    flex-basis: calc(100% / 2);
+    padding: 0 15px;
+    margin-bottom: 0;
   }
 }
 
