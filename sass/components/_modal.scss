@@ -4,8 +4,8 @@
   top: 50%;
   background-color: $background-color-primary;
   transform: translate(-50%, -50%) scale(1);
-  width: 528px;
-  height: 581px;
+  width: 450px;
+  height: 609px;
   z-index: 1;
   transition-property: transform;
   transition-duration: 1s;
@@ -32,6 +32,9 @@
     letter-spacing: 0.03em;
     color: $text-color-primary;
     margin-top: 40px;
+    width: 370px;
+    margin-left: auto;
+    margin-right: auto;
   }
   &__form-label {
     display: flex;
@@ -49,7 +52,7 @@
     border: 1px solid $form-input-border;
     border-radius: 4px;
     margin: 4px 40px 0 40px;
-    width: 448px;
+    width: 370px;
     height: 40px;
   }
   &__input--property {
@@ -67,7 +70,7 @@
     border: 1px solid $form-input-border;
     border-radius: 4px;
     margin: 4px 40px 0 40px;
-    width: 448px;
+    width: 370px;
     height: 120px;
     outline: none;
     font-size: 12px;
@@ -81,13 +84,15 @@
   &__policy-checkbox {
     display: flex;
     margin-top: 20px;
-    margin-left: 54px;
+    margin-left: auto;
+    margin-right: auto;
     column-gap: 7px;
     align-items: center;
+    justify-content: center;
   }
   &__policy-text {
     color: $text-color-secondary;
-    font-size: 14px;
+    font-size: 12px;
     line-height: 1.714;
   }
 
@@ -117,7 +122,8 @@
     padding: 10px 76px;
     border-radius: 4px;
     margin-top: 30px;
-    margin-left: 164px;
+    margin-left: auto;
+    margin-right: auto;
     letter-spacing: 0.06em;
     box-shadow: 0px 4px 4px $sign-in-shadow;
     height: 50px;
@@ -139,5 +145,28 @@
   }
   &__checkbox-icon:checked + &__vector {
     background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='15' fill='none'%3E%3Crect width='16' height='15' fill='%232196F3' rx='2'/%3E%3Cpath fill='%23fff' stroke='%23fff' stroke-width='.2' d='m3.957 7.752-.069-.066-.069.065-.888.842-.076.072.076.073 3.496 3.334.069.066.069-.066 7.504-7.158.076-.073-.076-.072-.882-.841-.069-.066-.069.066-6.553 6.246-2.539-2.422Z'/%3E%3C/svg%3E");
+  }
+}
+
+@media (min-width: 1200px) {
+  .modal {
+    width: 528px;
+    height: 581px;
+
+    &__input {
+      width: 448px;
+      height: 40px;
+    }
+    &__textarea {
+      width: 448px;
+    }
+    &__form-header {
+      width: 448px;
+    }
+    &__policy-text {
+      color: $text-color-secondary;
+      font-size: 14px;
+      line-height: 1.714;
+    }
   }
 }
