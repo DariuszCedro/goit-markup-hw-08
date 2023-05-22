@@ -23,10 +23,10 @@
         >
         <nav>
           <ul class="navigation">
-            <li>
+            <li class="navigation--border">
               <a class="navigation__link" href="./index.html">Agencja</a>
             </li>
-            <li class="navigation--border">
+            <li>
               <a class="navigation__link" href="./portfolio.html">Portfolio</a>
             </li>
             <li>
@@ -37,19 +37,28 @@
         <div class="contact-container">
           <div>
             <a class="contact-link" href="mailto:info@devstudio.com"
-              ><svg class="contact-link__icon" width="16px" height="12px">
+              ><svg class="contact-link__icon" id="mail-icon">
                 <use href="./images/icons.svg#icon-envelope"></use></svg
               >info@devstudio.com</a
             >
           </div>
           <div>
             <a class="contact-link" href="tel:info@devstudio.com"
-              ><svg class="contact-link__icon" width="10px" height="16px">
+              ><svg class="contact-link__icon" id="smartphone-icon">
                 <use href="./images/icons.svg#icon-smartphone"></use></svg
               >+48 111 111 111</a
             >
           </div>
         </div>
+        <button
+          class="menu-toggle js-open-menu"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+        >
+          <svg width="24" height="16" xmlns="http://www.w3.org/2000/svg">
+            <use href="./images/icons.svg#icon-menu"></use>
+          </svg>
+        </button>
       </div>
     </header>
     <main>
