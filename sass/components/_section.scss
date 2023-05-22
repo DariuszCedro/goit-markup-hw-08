@@ -14,16 +14,31 @@
     display: none;
   }
 }
-@media (min-width: 768px) {
+@media (min-width: 768px) and (max-width: 1199px) {
+  .section {
+    &--spacing {
+      padding-bottom: 45px;
+    }
+    &.section-team {
+      padding-top: 60px;
+    }
+  }
+}
+
+@media (min-width: 1200px) {
   .section {
     padding: 94px 0;
+
+    &.section-team {
+      padding: 94px 0;
+    }
+
     &__header#first {
       display: block;
     }
     &__header {
       font-size: 36px;
       line-height: 1.171944;
-      text-align: center;
       margin-bottom: 50px;
     }
   }

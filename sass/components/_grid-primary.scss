@@ -5,6 +5,8 @@
   line-height: 1.71429;
   list-style-type: none;
   padding-left: 10px;
+  padding-right: 10px;
+  padding-bottom: 60px;
 
   & h5 {
     font-size: 14px;
@@ -22,29 +24,39 @@
   & li {
     max-width: 450px;
   }
-  & li > p {
-    margin-bottom: 30px;
-  }
 }
 
 @media (min-width: 768px) {
   .grid-primary {
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 1.71429;
-    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 30px;
+    flex-basis: calc(100% / 2);
+    padding: 0 15px;
+
+    & h5 {
+      font-size: 14px;
+    }
+    &__icon {
+      padding: 25px 142px;
+    }
+
+    & li {
+      max-width: 354px;
+    }
+  }
+}
+
+@media (min-width: 1200px) {
+  .grid-primary {
+    padding-bottom: 94px;
     display: flex;
     column-gap: 30px;
 
     & h5 {
       font-size: 14px;
-      line-height: 1.17214;
-      margin-bottom: 10px;
     }
     &__icon {
-      display: flex;
-      background-color: $background-color-third;
-      margin-bottom: 30px;
       padding: 25px 100px;
     }
 

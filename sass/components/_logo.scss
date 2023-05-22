@@ -26,26 +26,21 @@
 
 @media (min-width: 768px) {
   .logo {
+    &--header {
+      margin-right: 83px;
+    }
+  }
+}
+@media (min-width: 1200px) {
+  .logo {
     font-size: 26px;
-    font-weight: 700;
-    text-decoration: none;
 
     &--header {
-      color: $logo-color-dark;
       line-height: 1.17385;
     }
 
     &--footer {
-      color: $background-color-primary;
-      line-height: 1.38;
-      display: flex;
-      margin-bottom: 20px;
       justify-content: start;
-    }
-
-    & > span,
-    & > span {
-      color: $hover-effect;
     }
   }
 }

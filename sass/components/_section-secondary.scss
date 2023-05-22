@@ -25,15 +25,29 @@
 
 @media (min-width: 768px) {
   .section-secondary {
-    color: $background-color-primary;
-    background-color: $background-color-secondary;
+    & h1 {
+      font-size: 26px;
+      line-height: 1.363636;
+    }
+    & .container {
+      padding: 118px 0;
+    }
+    &--background {
+      background-image: linear-gradient(to right, #2f303a66 50%, #2f303a66 100%),
+        url(../images/people-working-tablet.jpg);
+      background-repeat: no-repeat;
+      background-size: cover;
+      max-width: 768px;
+      margin: auto;
+    }
+  }
+}
 
+@media (min-width: 1200px) {
+  .section-secondary {
     & h1 {
       font-size: 44px;
-      font-weight: 900;
       line-height: 1.363636;
-      margin: 0 0 30px;
-      text-align: center;
     }
     & .container {
       padding: 200px 0;
@@ -41,8 +55,6 @@
     &--background {
       background-image: linear-gradient(to right, #2f303a66 50%, #2f303a66 100%),
         url(../images/people-working.jpg);
-
-      background-size: cover;
       background-repeat: no-repeat;
       max-width: 1600px;
       margin: auto;

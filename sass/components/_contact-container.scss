@@ -1,14 +1,19 @@
-@media (max-width: 768px) {
-  .contact-container {
-    display: none;
-  }
+.contact-container {
+  display: none;
 }
 
 @media (min-width: 768px) {
+  .contact-container {
+    display: block;
+    padding: 21px 15px 21px 101px;
+  }
+}
+@media (min-width: 1200px) {
   .contact-container {
     display: flex;
     column-gap: 30px;
     margin-left: 345px;
     margin-right: 0;
+    padding: 0;
   }
 }

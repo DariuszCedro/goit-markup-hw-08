@@ -16,6 +16,15 @@
     transition-duration: $transition-duration;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   }
+  &__icon#mail-icon {
+    width: 16px;
+    height: 12px;
+  }
+
+  &__icon#smartphone-icon {
+    width: 10px;
+    height: 16px;
+  }
 
   &:hover,
   &:focus {
@@ -28,35 +37,23 @@
   }
 }
 
-@media (min-width: 768px) {
+@media (min-width: 768px) and (max-width: 1199px) {
   .contact-link {
-    display: flex;
-    font-size: 14px;
+    font-size: 12px;
     line-height: 1.17214;
-    color: $text-color-secondary;
-    text-decoration: none;
-    transition-property: color, background-color, box-shadow, fill, border-color;
-    transition-duration: $transition-duration;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
-    &__icon {
-      fill: #757575;
-      margin-right: 10px;
-      align-self: center;
-      transition-property: color, background-color, box-shadow, fill,
-        border-color;
-      transition-duration: $transition-duration;
-      transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    &__icon#mail-icon {
+      width: 14px;
+      height: 10px;
     }
 
-    &:hover,
-    &:focus {
-      color: $hover-effect;
+    &__icon#smartphone-icon {
+      width: 10px;
+      height: 14px;
     }
 
-    &:hover &__icon,
-    &:focus &__icon {
-      fill: $hover-effect;
+    &:first-child {
+      margin-bottom: 8px;
     }
   }
 }
