@@ -12,62 +12,38 @@
     />
     <link rel="stylesheet" href="./css/modern-normalize.min.css" />
     <link rel="stylesheet" href="./css/main.min.css" />
-    <link rel="stylesheet" href="./css/styles.css" />
     <title>Studio</title>
   </head>
   <body>
     <header>
       <div class="container header">
-        
         <a class="logo logo--header" href="./index.html"
           ><span>Web</span>Studio</a
         >
         <nav>
           <ul class="navigation">
             <li class="navigation--border">
-              <a
-                class="navigation__link"
-                href="./index.html"
-                >Agencja</a
-              >
+              <a class="navigation__link" href="./index.html">Agencja</a>
             </li>
             <li>
-              <a
-                class="navigation__link"
-                href="./portfolio.html"
-                >Portfolio</a
-              >
+              <a class="navigation__link" href="./portfolio.html">Portfolio</a>
             </li>
             <li>
-              <a class="navigation__link" href=""
-                >Kontakt</a
-              >
+              <a class="navigation__link" href="">Kontakt</a>
             </li>
           </ul>
         </nav>
         <div class="contact-container">
           <div>
-            <a
-              class="contact-link"
-              href="mailto:info@devstudio.com"
-              ><svg
-                class="contact-link__icon"
-                id="mail-icon"
-                
-              >
+            <a class="contact-link" href="mailto:info@devstudio.com"
+              ><svg class="contact-link__icon" id="mail-icon">
                 <use href="./images/icons.svg#icon-envelope"></use></svg
               >info@devstudio.com</a
             >
           </div>
           <div>
-            <a
-              class="contact-link"
-              href="tel:info@devstudio.com"
-              ><svg
-                class="contact-link__icon"
-                id="smartphone-icon"
-             
-              >
+            <a class="contact-link" href="tel:info@devstudio.com"
+              ><svg class="contact-link__icon" id="smartphone-icon">
                 <use href="./images/icons.svg#icon-smartphone"></use></svg
               >+48 111 111 111</a
             >
@@ -78,13 +54,8 @@
           aria-expanded="false"
           aria-controls="mobile-menu"
         >
-          <svg
-            width="24"
-            height="16"
-            
-            xmlns="http://www.w3.org/2000/svg"
-          >
-          <use href="./images/icons.svg#icon-menu"></use>
+          <svg width="24" height="16" xmlns="http://www.w3.org/2000/svg">
+            <use href="./images/icons.svg#icon-menu"></use>
           </svg>
         </button>
       </div>
@@ -147,31 +118,32 @@
                       name="client-email"
                     />
                   </div>
-                  <label class="modal__form-label" for="comment">Komentarz</label>
+                  <label class="modal__form-label" for="comment"
+                    >Komentarz</label
+                  >
 
                   <textarea
-                  class="modal__textarea"
-                  id="comment"
-                  name="client-comment"
-                  placeholder="Wprowadź tekst"
-                ></textarea>
-                <div class="modal__policy-checkbox">
-                  <input
-                    type="checkbox"
-                    name="policy"
-                    class="modal__checkbox-icon"
-                    id="check"
-                  />
-                  <label
-                    class="modal__vector"
-                    for="check"
-                  ></label>
-                  <p class="modal__policy-text">
-                    Oświadczam iż akceptuję <a href="">Regulamin</a> i
-                    <a href="">Politykę Prywatności</a>.
-                  </p>
-                </div>
-                <button class="modal__button-send" type="submit">Wyślij</button>
+                    class="modal__textarea"
+                    id="comment"
+                    name="client-comment"
+                    placeholder="Wprowadź tekst"
+                  ></textarea>
+                  <div class="modal__policy-checkbox">
+                    <input
+                      type="checkbox"
+                      name="policy"
+                      class="modal__checkbox-icon"
+                      id="check"
+                    />
+                    <label class="modal__vector" for="check"></label>
+                    <p class="modal__policy-text">
+                      Oświadczam iż akceptuję <a href="">Regulamin</a> i
+                      <a href="">Politykę Prywatności</a>.
+                    </p>
+                  </div>
+                  <button class="modal__button-send" type="submit">
+                    Wyślij
+                  </button>
                 </form>
               </div>
             </div>
@@ -235,15 +207,17 @@
             <li class="grid-secondary__container">
               <img
                 src="./images/writting_on_keyboard.jpg"
+                srcset="./images/writting_on_keyboard@2x.jpg 2x"
                 alt="Writting on keyboard"
                 width="370"
                 height="294"
               />
               <p class="grid-secondary__label">APLIKACJE KOMPUTEROWE</p>
             </li>
-            <li class="grid-secondary__container"">
+            <li class="grid-secondary__container">
               <img
                 src="./images/man_with_laptop.jpg"
+                srcset="./images/man_with_laptop@2x.jpg 2x"
                 alt="Working with smartphone and laptop"
                 width="370"
                 height="294"
@@ -253,6 +227,7 @@
             <li class="grid-secondary__container">
               <img
                 src="./images/tablet.jpg"
+                srcset="./images/tablet@2x.jpg 2x"
                 alt="Tablet held in hand"
                 width="370"
                 height="294"
@@ -269,50 +244,41 @@
             <li>
               <figure>
                 <picture>
-                  <source srcset="./images/designer.jpg" media="(min-width: 1200px)" />
-                  <source srcset="./images/designer-tablet.jpg" media="(min-width: 768px)" />
-                                  <img
-                  src="./images/designer-mobile.jpg"
-                  alt="Jon Doe - Product Designer"
-                  
+                  <source
+                    srcset="./images/designer.jpg, ./images/designer@2x.jpg 2x"
+                    media="(min-width: 1200px)" />
+                  <source
+                    srcset="
+                      ./images/designer-tablet.jpg,
+                      ./images/designer-tablet@2x.jpg 2x
+                    "
+                    media="(min-width: 768px)" />
+                  <img
+                    src="./images/designer-mobile.jpg"
+                    srcset="./images/designer-mobile@2x.jpg 2x"
+                    alt="Jon Doe - Product Designer"
                 /></picture>
                 <figcaption class="grid-team__figcaption">
                   <h4>John Doe</h4>
                   <p>Product Designer</p>
                   <div class="grid-team__icon-container">
                     <a class="social-link" href="">
-                      <svg
-                        class="grid-team__icon"
-                        width="44px"
-                        height="44px"
-                      >
+                      <svg class="grid-team__icon" width="44px" height="44px">
                         <use href="./images/icons.svg#icon-instagram-2"></use>
                       </svg>
                     </a>
                     <a class="social-link" href="">
-                      <svg
-                        class="grid-team__icon"
-                        width="44px"
-                        height="44px"
-                      >
+                      <svg class="grid-team__icon" width="44px" height="44px">
                         <use href="./images/icons.svg#icon-twitter-1"></use>
                       </svg>
                     </a>
                     <a class="social-link" href="">
-                      <svg
-                        class="grid-team__icon"
-                        width="44px"
-                        height="44px"
-                      >
+                      <svg class="grid-team__icon" width="44px" height="44px">
                         <use href="./images/icons.svg#icon-facebook-1"></use>
                       </svg>
                     </a>
                     <a class="social-link" href="">
-                      <svg
-                        class="grid-team__icon"
-                        width="44px"
-                        height="44px"
-                      >
+                      <svg class="grid-team__icon" width="44px" height="44px">
                         <use href="./images/icons.svg#icon-linkedin-1"></use>
                       </svg>
                     </a>
@@ -323,51 +289,45 @@
             <li>
               <figure>
                 <picture>
-                  <source srcset="./images/developer.jpg" media="(min-width: 1200px)" />
-                  <source srcset="./images/developer-tablet.jpg" media="(min-width: 768px)" />
-                  
-                <img
-                  src="./images/developer-mobile.jpg"
-                  alt="Jon Doe - Frontend Developer"
-                 
+                  <source
+                    srcset="
+                      ./images/developer.jpg,
+                      ./images/developer@2x.jpg 2x
+                    "
+                    media="(min-width: 1200px)" />
+                  <source
+                    srcset="
+                      ./images/developer-tablet.jpg,
+                      ./images/developer-tablet@2x.jpg
+                    "
+                    media="(min-width: 768px)" />
+
+                  <img
+                    src="./images/developer-mobile.jpg"
+                    srcset="./images/developer-mobile@2x.jpg"
+                    alt="Jon Doe - Frontend Developer"
                 /></picture>
                 <figcaption class="grid-team__figcaption">
                   <h4>John Doe</h4>
                   <p>Frontend Developer</p>
                   <div class="grid-team__icon-container">
                     <a class="social-link" href="">
-                      <svg
-                        class="grid-team__icon"
-                        width="44px"
-                        height="44px"
-                      >
+                      <svg class="grid-team__icon" width="44px" height="44px">
                         <use href="./images/icons.svg#icon-instagram-2"></use>
                       </svg>
                     </a>
                     <a class="social-link" href="">
-                      <svg
-                        class="grid-team__icon"
-                        width="44px"
-                        height="44px"
-                      >
+                      <svg class="grid-team__icon" width="44px" height="44px">
                         <use href="./images/icons.svg#icon-twitter-1"></use>
                       </svg>
                     </a>
                     <a class="social-link" href="">
-                      <svg
-                        class="grid-team__icon"
-                        width="44px"
-                        height="44px"
-                      >
+                      <svg class="grid-team__icon" width="44px" height="44px">
                         <use href="./images/icons.svg#icon-facebook-1"></use>
                       </svg>
                     </a>
                     <a class="social-link" href="">
-                      <svg
-                        class="grid-team__icon"
-                        width="44px"
-                        height="44px"
-                      >
+                      <svg class="grid-team__icon" width="44px" height="44px">
                         <use href="./images/icons.svg#icon-linkedin-1"></use>
                       </svg>
                     </a>
@@ -378,12 +338,22 @@
             <li>
               <figure>
                 <picture>
-                  <source srcset="./images/marketing.jpg" media="(min-width: 1200px)" />
-                  <source srcset="./images/marketing-tablet.jpg" media="(min-width: 768px)" />
-                <img
-                  src="./images/marketing-mobile.jpg"
-                  alt="Jon Doe - Marketing"
-                  
+                  <source
+                    srcset="
+                      ./images/marketing.jpg,
+                      ./images/marketing@2x.jpg 2x
+                    "
+                    media="(min-width: 1200px)" />
+                  <source
+                    srcset="
+                      ./images/marketing-tablet.jpg,
+                      ./images/marketing-tablet@2x.jpg 2x
+                    "
+                    media="(min-width: 768px)" />
+                  <img
+                    src="./images/marketing-mobile.jpg"
+                    srcset="./images/marketing-mobile@2x.jpg 2x"
+                    alt="Jon Doe - Marketing"
                 /></picture>
                 <figcaption class="grid-team__figcaption">
                   <h4>John Doe</h4>
@@ -395,29 +365,17 @@
                       </svg>
                     </a>
                     <a class="social-link" href="">
-                      <svg
-                        class="grid-team__icon"
-                        width="44px"
-                        height="44px"
-                      >
+                      <svg class="grid-team__icon" width="44px" height="44px">
                         <use href="./images/icons.svg#icon-twitter-1"></use>
                       </svg>
                     </a>
                     <a class="social-link" href="">
-                      <svg
-                        class="grid-team__icon"
-                        width="44px"
-                        height="44px"
-                      >
+                      <svg class="grid-team__icon" width="44px" height="44px">
                         <use href="./images/icons.svg#icon-facebook-1"></use>
                       </svg>
                     </a>
                     <a class="social-link" href="">
-                      <svg
-                        class="grid-team__icon"
-                        width="44px"
-                        height="44px"
-                      >
+                      <svg class="grid-team__icon" width="44px" height="44px">
                         <use href="./images/icons.svg#icon-linkedin-1"></use>
                       </svg>
                     </a>
@@ -428,50 +386,44 @@
             <li>
               <figure>
                 <picture>
-                  <source srcset="./images/ui_designer.jpg" media="(min-width: 1200px)" />
-                  <source srcset="./images/ui_designer-tablet.jpg" media="(min-width: 768px)" />
-                <img
-                  src="./images/ui_designer-mobile.jpg"
-                  alt="Jon Doe - UI Designer"
-                 
+                  <source
+                    srcset="
+                      ./images/ui_designer.jpg,
+                      ./images/ui_designer@2x.jpg
+                    "
+                    media="(min-width: 1200px)" />
+                  <source
+                    srcset="
+                      ./images/ui_designer-tablet.jpg,
+                      ./images/ui_designer-tablet@2x.jpg 2x
+                    "
+                    media="(min-width: 768px)" />
+                  <img
+                    src="./images/ui_designer-mobile.jpg"
+                    srcset="./images/ui_designer-mobile@2x.jpg 2x"
+                    alt="Jon Doe - UI Designer"
                 /></picture>
                 <figcaption class="grid-team__figcaption">
                   <h4>John Doe</h4>
                   <p>UI Designer</p>
                   <div class="grid-team__icon-container">
                     <a class="social-link" href="">
-                      <svg
-                        class="grid-team__icon"
-                        width="44px"
-                        height="44px"
-                      >
+                      <svg class="grid-team__icon" width="44px" height="44px">
                         <use href="./images/icons.svg#icon-instagram-2"></use>
                       </svg>
                     </a>
                     <a class="social-link" href="">
-                      <svg
-                        class="grid-team__icon"
-                        width="44px"
-                        height="44px"
-                      >
+                      <svg class="grid-team__icon" width="44px" height="44px">
                         <use href="./images/icons.svg#icon-twitter-1"></use>
                       </svg>
                     </a>
                     <a class="social-link" href="">
-                      <svg
-                        class="grid-team__icon"
-                        width="44px"
-                        height="44px"
-                      >
+                      <svg class="grid-team__icon" width="44px" height="44px">
                         <use href="./images/icons.svg#icon-facebook-1"></use>
                       </svg>
                     </a>
                     <a class="social-link" href="">
-                      <svg
-                        class="grid-team__icon"
-                        width="44px"
-                        height="44px"
-                      >
+                      <svg class="grid-team__icon" width="44px" height="44px">
                         <use href="./images/icons.svg#icon-linkedin-1"></use>
                       </svg>
                     </a>
@@ -487,55 +439,31 @@
           <h2 class="section__header">Nasi klienci</h2>
           <div class="grid-client">
             <a class="grid-client__link" href=""
-              ><svg
-                class="grid-client__icon"
-                width="41px"
-                height="46.7px"
-              >
+              ><svg class="grid-client__icon" width="41px" height="46.7px">
                 <use href="./images/icons.svg#icon-group"></use></svg
             ></a>
 
             <a class="grid-client__link" href=""
-              ><svg
-                class="grid-client__icon"
-                width="40px"
-                height="52px"
-              >
+              ><svg class="grid-client__icon" width="40px" height="52px">
                 <use href="./images/icons.svg#icon-group-1"></use></svg
             ></a>
 
             <a class="grid-client__link" href=""
-              ><svg
-                class="grid-client__icon"
-                width="43.46px"
-                height="41.18px"
-              >
+              ><svg class="grid-client__icon" width="43.46px" height="41.18px">
                 <use href="./images/icons.svg#icon-group-2"></use></svg
             ></a>
             <a class="grid-client__link" href=""
-              ><svg
-                class="grid-client__icon"
-                width="84.44px"
-                height="40.62"
-              >
+              ><svg class="grid-client__icon" width="84.44px" height="40.62">
                 <use href="./images/icons.svg#icon-group-3"></use></svg
             ></a>
 
             <a class="grid-client__link" href=""
-              ><svg
-                class="grid-client__icon"
-                width="62.54px"
-                height="45.43px"
-              >
+              ><svg class="grid-client__icon" width="62.54px" height="45.43px">
                 <use href="./images/icons.svg#icon-group-4"></use></svg
             ></a>
 
             <a class="grid-client__link" href=""
-              ><svg
-                class="grid-client__icon"
-                width="93.79px"
-                height="43.93px"
-              >
+              ><svg class="grid-client__icon" width="93.79px" height="43.93px">
                 <use href="./images/icons.svg#icon-group-5"></use></svg
             ></a>
           </div>
@@ -550,14 +478,10 @@
           >
           <address>m. Warszawa, Aleje Jerozolimskie 21</address>
           <div>
-            <a
-              class="contact-link"
-              href="mailto:info@devstudio.com"
+            <a class="contact-link" href="mailto:info@devstudio.com"
               >info@devstudio.com</a
             >
-            <a
-              class="contact-link"
-              href="tel:info@devstudio.com"
+            <a class="contact-link" href="tel:info@devstudio.com"
               >+48 111 111 111</a
             >
           </div>
@@ -634,14 +558,10 @@
         <li><a href="" class="link">Kontakt</a></li>
       </ul>
       <div class="menu-container__contacts">
-        <a
-        class="contact-link"
-        href="tel:info@devstudio.com"
-        >+48 111 111 111</a
-      >
-        <a
-          class="contact-link"
-          href="mailto:info@devstudio.com"
+        <a class="contact-link" href="tel:info@devstudio.com"
+          >+48 111 111 111</a
+        >
+        <a class="contact-link" href="mailto:info@devstudio.com"
           >info@devstudio.com</a
         >
       </div>

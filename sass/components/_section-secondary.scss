@@ -22,6 +22,14 @@
     margin-right: auto;
   }
 }
+@media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .section-secondary--background {
+    background-image: linear-gradient(to right, #2f303a66 50%, #2f303a66 100%),
+      url(../images/people-working-mobile@2x.jpg);
+  }
+}
 
 @media (min-width: 768px) {
   .section-secondary {
@@ -41,6 +49,14 @@
       margin: auto;
     }
   }
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .section-secondary--background {
+      background-image: linear-gradient(to right, #2f303a66 50%, #2f303a66 100%),
+        url(../images/people-working-tablet@2x.jpg);
+    }
+  }
 }
 
 @media (min-width: 1200px) {
@@ -58,6 +74,14 @@
       background-repeat: no-repeat;
       max-width: 1600px;
       margin: auto;
+    }
+  }
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .section-secondary--background {
+      background-image: linear-gradient(to right, #2f303a66 50%, #2f303a66 100%),
+        url(../images/people-working@2x.jpg);
     }
   }
 }
