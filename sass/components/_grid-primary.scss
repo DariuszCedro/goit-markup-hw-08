@@ -18,7 +18,8 @@
     display: flex;
     background-color: $background-color-third;
     margin-bottom: 30px;
-    padding: 25px 190px;
+    padding: 25px;
+    justify-content: center;
   }
 
   & li {

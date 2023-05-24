@@ -4,7 +4,8 @@
   top: 50%;
   background-color: $background-color-primary;
   transform: translate(-50%, -50%) scale(1);
-  width: 450px;
+  width: 100%;
+  max-width: 450px;
   height: 609px;
   z-index: 1;
   transition-property: transform;
@@ -32,15 +33,17 @@
     letter-spacing: 0.03em;
     color: $text-color-primary;
     margin-top: 40px;
-    width: 370px;
+    max-width: 370px;
     margin-left: auto;
     margin-right: auto;
   }
   &__form-label {
+    max-width: 370px;
     display: flex;
     flex-direction: column;
     margin-top: 10px;
-    margin-left: 40px;
+    margin-left: auto;
+    margin-right: auto;
     color: $text-color-secondary;
     font-size: 12px;
   }
@@ -51,8 +54,9 @@
     padding: 11px 12px;
     border: 1px solid $form-input-border;
     border-radius: 4px;
-    margin: 4px 40px 0 40px;
-    width: 370px;
+    margin: 4px auto 0 auto;
+    width: 100%;
+    max-width: 370px;
     height: 40px;
   }
   &__input--property {
@@ -69,8 +73,9 @@
     padding: 11px 12px;
     border: 1px solid $form-input-border;
     border-radius: 4px;
-    margin: 4px 40px 0 40px;
-    width: 370px;
+    margin: 4px auto 0 auto;
+    width: 100%;
+    max-width: 370px;
     height: 120px;
     outline: none;
     font-size: 12px;
@@ -150,23 +155,28 @@
 
 @media (min-width: 1200px) {
   .modal {
-    width: 528px;
+    max-width: 528px;
     height: 581px;
 
     &__input {
-      width: 448px;
+      max-width: 448px;
       height: 40px;
     }
     &__textarea {
-      width: 448px;
+      max-width: 448px;
     }
     &__form-header {
-      width: 448px;
+      max-width: 500px;
+      letter-spacing: 0.03em;
+      text-align: center;
     }
     &__policy-text {
       color: $text-color-secondary;
       font-size: 14px;
       line-height: 1.714;
+    }
+    &__form-label {
+      max-width: 448px;
     }
   }
 }
